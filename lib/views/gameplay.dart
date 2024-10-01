@@ -2,6 +2,7 @@
 
 import 'dart:async';
 import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:foruai_mini_app/controller/coin_controller.dart';
 import 'package:get/get.dart';
@@ -233,7 +234,7 @@ class MyBird extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
         width: 50,
         height: 50,
         // decoration: BoxDecoration(
@@ -249,7 +250,7 @@ class MyBird extends StatelessWidget {
 class MyObstacle extends StatelessWidget {
   final double size;
 
-  MyObstacle({super.key, required this.size});
+  const MyObstacle({super.key, required this.size});
 
   @override
   Widget build(BuildContext context) {

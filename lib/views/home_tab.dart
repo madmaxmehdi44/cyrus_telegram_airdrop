@@ -33,10 +33,9 @@ class HomeTab extends GetView<CoinController> {
                             ),
                             const SizedBox(height: 8.0),
                             Text(
-                              'Capt. ' +
-                                  (telegramController.telegramData?['user']
-                                          ?['username'] ??
-                                      'Unknown'),
+                              telegramController.telegramData?['user']
+                                      ?['username'] ??
+                                  'Unknown',
                               style: const TextStyle(fontSize: 16),
                             ),
                           ],
@@ -69,7 +68,7 @@ class HomeTab extends GetView<CoinController> {
                   Row(
                     children: <Widget>[
                       const HudView(
-                        label: 'Earn Per tap: 2',
+                        label: 'Earn Per tap: 2 Cyrus',
                         icon: Icon(
                           Icons.monetization_on,
                           color: Colors.grey,
@@ -131,7 +130,7 @@ class HomeTab extends GetView<CoinController> {
                       coinController.upgradeSpaceship(context);
                     },
                     child: Text(
-                        '${'Buy HP (-${coinController.upgradeCost}'} coins)'),
+                        '${'Buy TON (-${coinController.upgradeCost}'} coins)'),
                   ),
                 ],
               ),

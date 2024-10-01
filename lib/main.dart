@@ -15,7 +15,7 @@ class ExpeditionToTheMoonApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Expedition to the Moon',
+      title: 'ایردراپ Cyrus',
       theme: ThemeData.light(),
       darkTheme: ThemeData.dark(),
       themeMode: ThemeMode.dark,
@@ -40,11 +40,11 @@ class HomeScreenState extends State<HomeScreen> {
   void initState() {
     super.initState();
     _widgetOptions = <Widget>[
-      HomeTab(),
+      const HomeTab(),
       const AdventureTab(),
-      const Text('Earn Tab - Coming Soon'),
-      const Text('Friend Tab - Coming Soon'),
-      const Text('Airdrop Tab - Coming Soon'),
+      const Text('Earn Tab - بزودی...'),
+      const Text('Friend Tab - بزودی...'),
+      const Text('Airdrop Tab - بزودی...'),
     ];
   }
 
@@ -70,7 +70,7 @@ class HomeScreenState extends State<HomeScreen> {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.garage),
-            label: 'Garage',
+            label: 'Cyrus',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.flight_takeoff),

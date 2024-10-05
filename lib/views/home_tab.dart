@@ -68,7 +68,7 @@ class HomeTab extends GetView<CoinController> {
                   Row(
                     children: <Widget>[
                       const HudView(
-                        label: 'Earn Per tap: 2 Cyrus',
+                        label: 'Earn Per tap: 2 \$DINGO',
                         icon: Icon(
                           Icons.monetization_on,
                           color: Colors.grey,
@@ -84,7 +84,7 @@ class HomeTab extends GetView<CoinController> {
                       ),
                       const SizedBox(width: 8.0),
                       const HudView(
-                        label: 'Coin per sec: +1',
+                        label: 'Coin(s) per Sec: +1',
                         icon: Icon(
                           Icons.monetization_on,
                           color: Colors.grey,
@@ -120,7 +120,7 @@ class HomeTab extends GetView<CoinController> {
                       const SizedBox(width: 8),
                       Text(
                         'Coins: ${coinController.coins.value}',
-                        style: const TextStyle(fontSize: 20),
+                        style: const TextStyle(fontSize: 18),
                       ),
                     ],
                   ),
@@ -130,7 +130,7 @@ class HomeTab extends GetView<CoinController> {
                       coinController.upgradeSpaceship(context);
                     },
                     child: Text(
-                        '${'Buy TON (-${coinController.upgradeCost}'} coins)'),
+                        '${'Buy TON (${coinController.upgradeCost}'} coins)'),
                   ),
                 ],
               ),

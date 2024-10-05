@@ -15,7 +15,7 @@ class ExpeditionToTheMoonApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'ایردراپ Cyrus',
+      title: 'DINGO Crypto Airdrop',
       theme: ThemeData.light(),
       darkTheme: ThemeData.dark(),
       themeMode: ThemeMode.dark,
@@ -59,22 +59,22 @@ class HomeScreenState extends State<HomeScreen> {
     Get.put(CoinController());
     return Scaffold(
       appBar: AppBar(
-        toolbarHeight: 20,
-        // title: Text(
-        //   'Expedition to the Moon',
-        //   style: TextStyle(fontSize: 18),
-        // ),
+        toolbarHeight: kToolbarHeight,
+        title: const Text(
+          'Travel to the Moon',
+          style: TextStyle(fontSize: 16),
+        ),
       ),
       body: _widgetOptions.elementAt(_selectedIndex),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.garage),
-            label: 'Cyrus',
+            label: 'Dingo',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.flight_takeoff),
-            label: 'Adventure',
+            label: 'Tasks',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.monetization_on),

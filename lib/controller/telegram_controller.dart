@@ -1,7 +1,8 @@
 import 'dart:convert';
+import 'dart:js' as js;
+
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
-import 'dart:js' as js;
 
 class TelegramController extends GetxController {
   Map<String, dynamic>? telegramData;

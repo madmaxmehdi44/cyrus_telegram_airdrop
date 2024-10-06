@@ -26,7 +26,7 @@ class _AdventureTabState extends State<AdventureTab> {
                 width: 200,
                 height: 200,
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 15),
               const Text(
                   "Your spaceship not ready to ship!\nMinimum HP is 5 to play this game.")
             ],

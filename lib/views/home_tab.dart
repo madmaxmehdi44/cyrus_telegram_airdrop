@@ -130,7 +130,10 @@ class HomeTab extends GetView<CoinController> {
                       coinController.upgradeSpaceship(context);
                     },
                     child: Text(
-                        '${'Buy TON (${coinController.upgradeCost}'} coins)'),
+                      '${'Buy TON (${coinController.upgradeCost}'} coins)',
+                      overflow: const TextStyle().overflow,
+                      style: const TextStyle(fontWeight: FontWeight.bold),
+                    ),
                   ),
                 ],
               ),

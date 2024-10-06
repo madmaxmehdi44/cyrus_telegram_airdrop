@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:foruai_mini_app/controller/coin_controller.dart';
 import 'package:foruai_mini_app/controller/telegram_controller.dart';
 import 'package:foruai_mini_app/views/adventure_tab.dart';
+import 'package:foruai_mini_app/views/gameplay.dart';
 import 'package:foruai_mini_app/views/home_tab.dart';
 import 'package:get/get.dart';
 
@@ -42,7 +43,8 @@ class HomeScreenState extends State<HomeScreen> {
     _widgetOptions = <Widget>[
       const HomeTab(),
       const AdventureTab(),
-      const Text('Earn Tab - بزودی...'),
+      // const Text('Earn Tab - بزودی...'),
+      const GameScreen(),
       const Text('Friend Tab - بزودی...'),
       const Text('Airdrop Tab - بزودی...'),
     ];

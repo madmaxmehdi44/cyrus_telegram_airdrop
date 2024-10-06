@@ -38,6 +38,12 @@ class HomeTab extends GetView<CoinController> {
                                   'Unknown',
                               style: const TextStyle(fontSize: 16),
                             ),
+                            Text(
+                              telegramController.telegramData?['user']
+                                      ?['phone'] ??
+                                  'Unknown Phone',
+                              style: const TextStyle(fontSize: 16),
+                            ),
                           ],
                         ),
                         (telegramController.telegramData != null &&
